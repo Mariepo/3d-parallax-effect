@@ -6,21 +6,25 @@
 }
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #333;
 }
 
+/* Navbar */
 .logo {
     width: 100px;
 }
-
 header {
     width: 100%;
+    z-index: 9999;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    padding: 24px 0;
+    top: 0;
+    left: 0;
 }
 header nav {
     max-width: 96%;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,14 +37,14 @@ header ul {
 header ul a {
     text-decoration: none;
     color: white;
-    padding: 0 1.5rem;
+    padding: 0 24px;
     text-transform: uppercase;
     font-weight: 300;
     font-size: 16px;
 }
 .search a {
     font-size: 22px;
-    padding: 0 3rem;
+    padding: 0 24px;
 }
 
 .hamburger-menu a {
@@ -77,4 +81,144 @@ header ul a {
 }
 .hamburger-menu .icon-hamburger-menu::after {
     top: 4.5px;
+}
+
+/* Parallax layers */
+main {
+    position: relative;
+    background-color: #353;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.bg-img {
+    position: absolute;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.fog-1 {
+    z-index: 2;
+    top: calc(50%   100px);
+    left: calc(50% + 300px);
+    width: 1900px;
+}
+.mountain-10 {
+    z-index: 3;
+    top: calc(50% + 69px);
+    width: 870px;
+    left: calc(50% + 230px);
+}
+.fog-2 {
+    z-index: 4;
+    top: calc(50% + 95px);
+    left: calc(50% + 7px);
+    width: 1833px;
+}
+.mountain-9 {
+    z-index: 5;
+    top: calc(50% + 119px);
+    width: 463px;
+    left: calc(50%   457px);
+}
+.mountain-8 {
+    z-index: 6;
+    top: calc(50% + 96px);
+    width: 786px;
+    left: calc(50%   202px);
+}
+.fog-3 {
+    z-index: 7;
+    top: calc(50% + 171px);
+    left: calc(50% + 29px);
+    width: 449px;
+}
+.mountain-7 {
+    z-index: 8;
+    width: 515px;
+    top: calc(50% + 134px);
+    left: calc(50% + 305px);
+}
+.mountain-6 {
+    z-index: 10;
+    top: calc(50% + 86.5px);
+    width: 383.5px;
+    left: calc(50% + 590px);
+}
+.fog-4 {
+    z-index: 11;
+    top: calc(50% + 242px);
+    left: calc(50%   64px);
+    width: 543px;
+}
+.mountain-5 {
+    z-index: 12;
+    top: calc(50% + 269px);
+    width: 583px;
+    left: calc(50% + 130px);
+}
+.fog-5 {
+    z-index: 13;
+    top: calc(50% + 149px);
+    left: calc(50%   28px);
+    width: 1435px;
+}
+.mountain-4 {
+    z-index: 14;
+    top: calc(50% + 221px);
+    width: 717px;
+    left: calc(50%   381.5px); 
+}
+.mountain-3 {
+    z-index: 15;
+    top: calc(50% + 133px);
+    left: calc(50% + 736px);
+    width: 419px;
+}
+.fog-6 {
+    z-index: 16;
+    top: calc(50% + 177px);
+    left: calc(50%   30px);
+    width: 1418px;
+}
+.mountain-2 {
+    z-index: 17;
+    top: calc(50% + 188px);
+    left: calc(50% + 412px);
+    width: 625px;
+}
+.mountain-1 {
+    z-index: 18;
+    top: calc(50% + 91.5px);
+    left: calc(50% - 601px);
+    width: 450px;
+}
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+    transform: translate(-50%, -50%);
+}
+.text {
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 130px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+.text h2 {
+    font-weight: 200;
+    font-size: 100px;
+}
+.text h1 {
+    font-weight: 800;
+    font-size: 124px;
+    line-height: 0.88;
 }
