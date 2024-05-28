@@ -1,4 +1,5 @@
 const parallax_el = document.querySelectorAll('.parallax');
+const main = document.querySelector(".main");
 
 let xValue= 0;
 let yValue = 0;
@@ -33,6 +34,8 @@ window.addEventListener("mousemove", (e)=>{
     rotateDegree = (xValue / (window.innerWidth / 2) * 20);
     update(e.clientX);
 }); 
+
+
 
 // GSAP Library
 let timeline = gsap.timeline();
