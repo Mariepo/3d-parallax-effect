@@ -232,7 +232,6 @@ main {
 }
 .fog-7 { 
     position: absolute;
-    position: absolute;
     z-index: 2;
     width: 1900px;
     top: calc(50% - 100px);
